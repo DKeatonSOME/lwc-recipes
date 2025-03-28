@@ -1,0 +1,11 @@
+<template>
+    <div style="height: 300px;">
+        <lightning-input type="number" value={numval}></lightning-input>
+        <lightning-datatable
+                key-field="LastName"
+                data={contacts.data} 
+                columns={columns}
+                onchange={handleChange}>
+        </lightning-datatable>
+    </div>   
+</template>
